@@ -3,7 +3,7 @@
   .new_post{
     position: fixed;
     top: 12vh;
-    bottom: 20vh;
+    bottom: 12vh;
     left: 10%;
     right: 10%;
     background-color: rgb(26, 26, 26);
@@ -41,6 +41,7 @@
     .btns{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 1rem 0;
 
       input{
