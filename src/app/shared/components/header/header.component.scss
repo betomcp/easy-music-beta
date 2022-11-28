@@ -1,0 +1,64 @@
+:host {
+  width: 100%;
+
+  header {
+    height: 10vh;
+    box-shadow: 0 2px 3px rgb(29, 29, 29);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search_bar{
+      background-color: white;
+      border-radius: 100px;
+      width: 66%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .01rem .5rem;
+
+      i{
+        color: rgb(45, 229, 125);
+      }
+
+      input{
+        padding: 0.19rem;
+        background-color: none;
+        border: none;
+        width: 95%;
+        outline: none;
+        color: rgb(113, 113, 113);
+      }
+    }
+
+    .menu_burger {
+      button{
+        font-size: 3rem !important;
+      }
+    }
+  }
+}
