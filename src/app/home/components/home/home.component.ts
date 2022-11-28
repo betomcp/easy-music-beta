@@ -14,8 +14,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.posts.push(new PostModel());
-    this.posts[0].text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    // this.posts.push(new PostModel());
   }
 
   togleNewPost(event?: boolean){
