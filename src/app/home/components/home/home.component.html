@@ -3,10 +3,18 @@
 <main>
 
   <div class="home_btns">
-    <button><i class='bx bxs-camera-plus' ></i> Publicar</button>
+    <button (click)="togleNewPost()"><i class='bx bxs-camera-plus' ></i> Publicar</button>
     <button class="btn_color">Easy Match</button>
+  </div>
+  <div>
+    <ng-container *ngFor="let p of posts">
+      {{p.title}}
+    </ng-container>
   </div>
 
 </main>
 
 <em-footer></em-footer>
+
+<em-new-post *ngIf="newPostOpen" (closeModal)="togleNewPost()" (emitPost)="publish($event)">
+</em-new-post>

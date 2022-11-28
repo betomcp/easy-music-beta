@@ -76,7 +76,7 @@
     box-shadow: 2px 0 6px rgb(28, 28, 28);
     padding: 2rem;
     animation-name: burger-open;
-    animation-duration: .7s;
+    animation-duration: .4s;
 
     .menu_header {
       display: flex;
@@ -88,7 +88,7 @@
         font-weight: 100;
         font-size: 2.2rem;
         animation-name: burger-open-header;
-        animation-duration: 1.2s;
+        animation-duration: .6s;
       }
 
       button {
@@ -111,7 +111,7 @@
 
       li {
         animation-name: burger-open-li;
-        animation-duration: 1.5s;
+        animation-duration: .5s;
         padding: 3rem 0 1rem 0;
         border-bottom: solid 1px rgb(45, 229, 125);
         font-size: 1.2rem;

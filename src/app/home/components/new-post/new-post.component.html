@@ -1,0 +1,12 @@
+<div class="new_post">
+  <form [formGroup]="newPostForm" (submit)="publish()">
+    <h3>Título</h3>
+    <input type="text" formControlName="postTitle">
+    <h3>O que quero contar hoje</h3>
+    <textarea name="" id="" cols="30" rows="10" formControlName="postText"></textarea>
+    <div class="btns">
+      <input type="button" value="Cancelar" (click)="cancel()">
+      <input type="submit" value="Publicar">
+    </div>
+  </form>
+</div>
