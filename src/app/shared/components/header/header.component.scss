@@ -16,7 +16,7 @@
     font-size: 2rem;
     color: white;
 
-    div{
+    div {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -32,7 +32,7 @@
       align-items: center;
     }
 
-    .search_bar{
+    .search_bar {
       background-color: white;
       border-radius: 100px;
       width: 66%;
@@ -41,11 +41,11 @@
       align-items: center;
       padding: .01rem .5rem;
 
-      i{
+      i {
         color: rgb(45, 229, 125);
       }
 
-      input{
+      input {
         padding: 0.19rem;
         background-color: none;
         border: none;
@@ -56,9 +56,102 @@
     }
 
     .menu_burger {
-      button{
+      button {
         font-size: 3rem !important;
       }
+    }
+  }
+
+  .menu_close{
+    display: none;
+  }
+
+  .menu_open {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    background-color: rgb(33, 33, 33);
+    box-shadow: 2px 0 6px rgb(28, 28, 28);
+    padding: 2rem;
+    animation-name: burger-open;
+    animation-duration: .7s;
+
+    .menu_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        color: rgb(123, 123, 123);
+        font-weight: 100;
+        font-size: 2.2rem;
+        animation-name: burger-open-header;
+        animation-duration: 1.2s;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        font-size: 2.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(45, 229, 125);
+        animation-name: burger-open-header;
+        animation-duration: 1.2s;
+      }
+
+    }
+
+
+    ul {
+      list-style: none;
+
+      li {
+        animation-name: burger-open-li;
+        animation-duration: 1.5s;
+        padding: 3rem 0 1rem 0;
+        border-bottom: solid 1px rgb(45, 229, 125);
+        font-size: 1.2rem;
+        color: rgb(65, 65, 65);
+      }
+    }
+  }
+
+
+  @keyframes burger-open {
+    from {
+      width: 0%;
+      background-color: transparent;
+    }
+
+    to {
+      width: 60%;
+      background-color: black;
+    }
+  }
+
+  @keyframes burger-open-header {
+    from {
+      font-size: .0001px;
+    }
+
+    to {
+      font-size: 2.2rem;
+    }
+  }
+
+  @keyframes burger-open-li {
+    from {
+      font-size: .0001px;
+      color: transparent;
+    }
+
+    to {
+      font-size: 1.2rem;
+      color: rgb(65, 65, 65);;
     }
   }
 }

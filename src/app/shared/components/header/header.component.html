@@ -1,6 +1,6 @@
 <header>
   <div class="menu_burger">
-    <button><i class='bx bx-menu' ></i></button>
+    <button (click)="toggleMenu()"><i class='bx bx-menu' ></i></button>
   </div>
   <div class="search_bar">
     <i class='bx bx-search-alt-2' ></i>
@@ -10,3 +10,15 @@
     <button><i class='bx bxs-chat'></i></button>
   </div>
 </header>
+
+<aside class="menu_open" [ngClass]="{'menu_open': menuOpen, 'menu_close': !menuOpen}">
+  <div class="menu_header">
+    <h2>Menu</h2>
+    <button (click)="toggleMenu()"><i class='bx bx-x'></i></button>
+  </div>
+  <ul>
+    <li>Meu Perfil</li>
+    <li>Easy Match</li>
+    <li>Home</li>
+  </ul>
+</aside>
