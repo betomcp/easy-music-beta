@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PostComponent } from './components/post/post.component';
+import { SharedRoutingModule } from './shared-routing.module';
 
 
 
@@ -13,7 +14,8 @@ import { PostComponent } from './components/post/post.component';
     PostComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedRoutingModule
   ],
   exports: [
     FooterComponent,

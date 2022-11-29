@@ -1,6 +1,6 @@
 <footer>
-  <button><i class='bx bxs-star' ></i></button>
-  <button class="btn_color"><i class='bx bxs-home'></i></button>
-  <button><i class='bx bxs-face' ></i></button>
+  <button [ngClass]="{'btn_color': isMatch}"><i class='bx bxs-star' ></i></button>
+  <button [ngClass]="{'btn_color': isHome}" (click)="goToHome()"><i class='bx bxs-home'></i></button>
+  <button [ngClass]="{'btn_color': isProfile}" (click)="goToProfile()"><i class='bx bxs-face' ></i></button>
 </footer>
 
