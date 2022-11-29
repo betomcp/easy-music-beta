@@ -4,6 +4,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PostComponent } from './components/post/post.component';
 import { SharedRoutingModule } from './shared-routing.module';
+import { ProfileCardComponent } from './components/profile-card/profile-card.component';
 
 
 
@@ -11,7 +12,8 @@ import { SharedRoutingModule } from './shared-routing.module';
   declarations: [
     FooterComponent,
     HeaderComponent,
-    PostComponent
+    PostComponent,
+    ProfileCardComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { SharedRoutingModule } from './shared-routing.module';
   exports: [
     FooterComponent,
     HeaderComponent,
-    PostComponent
+    PostComponent,
+    ProfileCardComponent
   ]
 })
 export class SharedModule { }

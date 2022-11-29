@@ -22,8 +22,6 @@ export class FooterComponent implements OnInit {
       url = "/home"
     }
 
-
-
     switch(url){
       case "/home":
         this.isHome = true;
